@@ -7,14 +7,44 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: rgba(250, 250, 250, 1);
   color: #212121;
   line-height: 1.5;
+
+  background-image: linear-gradient(to left, #c8c6db, #dcf7fa, #c8c6db);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul > * {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul > *:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  border: 2px dotted black;
+
+  background: transparent;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
